@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>問い合わせフォームおためし</title>
+</head>
+
+<body>
+    <!--問い合わせフォーム-->
+    <div id="content">
+        <h1> Contact me </h1>
+        <form action="./func/mailpost.php" method="post" autocomplete="on">
+            <p>
+                <input type="text" name="username" id="username" required="required" placeholder="お名前" />
+            </p>
+            <p>
+                <input type="email" name="usermail" id="usermail" required="required" placeholder="メールアドレス" />
+            </p>
+            <p>
+                <input type="text" name="naiyou" id="naiyou" required="required" placeholder="メッセージ" />
+            </p>
+            <input type="submit" value="メール送信" />
+        </form>
+    </div>
+
+</body>
+
+</html>

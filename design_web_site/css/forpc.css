@@ -1,0 +1,36 @@
+/*
+PC用css
+*/
+
+@charset "utf-8";
+
+#page_box{
+     width: 100%;
+}
+
+header {
+     height: 100px;
+     width: 100%;
+}
+
+
+nav ul{
+     display: flex;
+     height: 100px;
+     width: 100%;
+     background: rgb(240,240,240);
+}
+nav ul li{
+     margin: 0px 0px 0px 20px;
+     width: 20%;
+}
+nav a {
+}
+
+#main_visual{
+     height: 925px;
+     width: 100%;
+}
+
+
+
