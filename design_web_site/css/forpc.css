@@ -33,4 +33,22 @@ nav a {
 }
 
 
+main #self_introduction{
+     display: flex;
+     align-items: center;
+     padding-left: 10%; 
+     padding-right: 10%;
+     padding-top: 50px; 
+     padding-bottom: 50px; 
+}
+
+
+.likeh2{
+    width: 35%;/*左に配置し幅固定*/
+}
+.explanatory_text{
+    flex: 1;/*右に配置し、幅可変*/
+}
+
+
 

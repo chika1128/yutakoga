@@ -33,7 +33,7 @@ header {
 
 
 #main_visual{
-     background: url("../data/img/pc/main_visual.jpg") no-repeat center center;
+     background: url("../data/img/mainvisual_pc.jpg") no-repeat center center;
      background-size:cover;/*表示領域に収める*/
 }
 
@@ -61,7 +61,43 @@ main #design{
 main #self_introduction{
     grid-row:3/4;
     grid-column:1/3;
+    background: rgb(255,255,255);
 }
 
+
+main #self_introduction h2{
+    font-size: 1.2em;
+    color: rgb(102,102,102);
+    width: 6em;
+    background: -moz-linear-gradient(left,#83e4df,#bcf06b); 
+    background: -webkit-linear-gradient(left, #83e4df,#bcf06b); 
+    background: linear-gradient(to right, #83e4df,#bcf06b);
+    padding: 1em 2em 1em 2em ;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+main #self_introduction .explanatory_text p{
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+
+.skill{
+    font-size: 0.9em;
+    margin-right: 0.5em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    color: rgb(255,255,255);
+    border-radius: 13%/50%;
+    border: 2px solid rgb(166,166,166);
+    background: rgb(166,166,166);
+}
+
+
+
+
+h1,h2,h3{
+
+}
 
 
