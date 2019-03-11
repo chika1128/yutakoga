@@ -2,21 +2,13 @@
 
 
 form#mail_form{
-	width : 960px;
-	margin : 50px auto;
-	padding : 10px 0;
 	background : #ffffff;
-	/*border : 1px solid #cccccc;*/
-	border-radius : 7px;
-	box-shadow : 0 0 7px rgba( 0, 0, 0, 0.2 );
 }
 
 form#mail_form dl{
     display: grid;      /* グリッドコンテナを作る */
     grid-template-columns: 1fr 1fr;     /* 縦向きのグリッドラインを決める */
     grid-template-rows: 1fr 1fr;            /* 横向きのグリッドラインを決める */
-	width : 90%;
-	margin : 0 auto;
 	overflow : hidden;
 }
 
@@ -35,20 +27,21 @@ form#mail_form dl dd#contact_dd_mail_address{
 
 form#mail_form dl dt{
 	display : none;
-	clear : both;
+	/*clear : both;
 	width : 30%;
 	float : left;
-	/*border-top : 1px solid #cccccc;*/
+	border-top : 1px solid #cccccc;
 	padding : 15px 0;
 	text-align : right;
 	overflow : hidden;
+	*/
 }
 
 form#mail_form dl dd{
-	width : 95%;
+	/*width : 95%;*/
 	/*float : left;*/
 	/*border-top : 1px solid #cccccc;*/
-	padding : 15px 0 15px 5%;
+	/*padding : 15px 0 15px 5%;*/
 }
 
 form#mail_form dl dt:first-child,
@@ -93,7 +86,7 @@ form#mail_form dl dd span.error_format,
 form#mail_form dl dd span.error_match{
 	display : block;
 	color : #ff0000;
-	font-size : 70%;
+	font-size : 80%;
 	margin-top : 3px;
 }
 
@@ -147,12 +140,12 @@ span.loading{
 form#mail_form input[type="text"],
 form#mail_form input[type="email"],
 form#mail_form input[type="tel"]{
-	max-width : 90%;
-	height : 2em;
+	width : 100%;
+	height : 2.5em;
 	padding : 2px 2%;
-	border : 1px solid #cccccc;
-	border-radius : 3px;
-	background : #fafafa;
+	border : 1px solid rgb(166, 166, 166);
+	/*border-radius : 3px;*/
+	background : rgb(255, 255, 255);
 	-webkit-appearance : none;
 	font-size : 100%;
 	font-family : inherit;
@@ -168,6 +161,8 @@ form#mail_form textarea:focus{
 	background : #ffffff;
 }
 
+
+/*
 form#mail_form ul li input[type="radio"],
 form#mail_form ul li input[type="checkbox"]{
 	margin-right : 10px;
@@ -184,23 +179,20 @@ form#mail_form select{
 	font-family : inherit;
 	margin-top : 10px;
 }
+*/
 
 form#mail_form textarea{
 	display : block;
-	width : 90%;
-	max-width : 90%;
-	/*height : 200px;*/
 	padding : 2px 2%;
 	resize : vertical;
-	border : 1px solid #cccccc;
-	border-radius : 3px;
-	background : #fafafa;
+	border : 1px solid rgb(166, 166, 166);
+	background : rgb(255, 255, 255);
 	-webkit-appearance : none;
 	font-size : 100%;
 	font-family : inherit;
 }
 
-
+/*
 form#mail_form ul{
 	list-style-type : none;
 }
@@ -214,10 +206,13 @@ form#mail_form input#company{
 	width : 60%;
 }
 
+*/
+
 form#mail_form input#name_1{
-	width : 50%;
+	width : 100%;
 }
 
+/*
 form#mail_form input#name_2,
 form#mail_form input#read_1,
 form#mail_form input#read_2,
@@ -257,6 +252,7 @@ form#mail_form input#address{
 	width : 90%;
 }
 
+*/
 
 form#mail_form p#form_submit{
 	width : 90%;
@@ -266,12 +262,13 @@ form#mail_form p#form_submit{
 }
 
 form#mail_form input[type="button"]{
-	padding : 9px 15px;
+	padding : 15px 30px;
 	vertical-align : middle;
+	letter-spacing : 1em;
 	line-height : 1;
-	background : #5cb85c;
-	border : 1px solid #4cae4c;
-	border-radius : 3px;
+	background : rgb(102, 102, 102);
+	border : 1px solid rgb(102, 102, 102);
+	/*border-radius : 3px;*/
 	color : #ffffff;
 	font-family : inherit;
 	-webkit-appearance : none;
@@ -280,8 +277,8 @@ form#mail_form input[type="button"]{
 
 form#mail_form input[type="button"]:hover{
 	cursor : pointer;
-	background : #449d44;
-	border : 1px solid #398439;
+	background : rgb(166, 166, 166);
+	border : 1px solid rgb(166, 166, 166);
 }
 
 form#mail_form input#form_submit_button{
