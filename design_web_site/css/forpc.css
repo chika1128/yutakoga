@@ -27,6 +27,11 @@ nav ul li{
 nav a {
 }
 
+
+/*------------------------------------------------*/
+/* main_visual～自己紹介まで */
+/*------------------------------------------------*/
+
 #main_visual{
      height: 925px;
      width: 100%;
@@ -50,5 +55,40 @@ main #self_introduction{
     flex: 1;/*右に配置し、幅可変*/
 }
 
+main #design div{   
+    margin-right: 25%;
+}
+main #retouch div{
+    margin-left: 25%;
+}
 
 
+/*------------------------------------------------*/
+/* Portfolio～Contact */
+/*------------------------------------------------*/
+
+/* Portfolio */
+.portfolio_image{
+    background: rgb(256,256,256);
+}
+
+/* Work flow */
+.work_flow_stage{
+    background: rgb(256,256,256);
+}
+
+/* Cost */
+article#cost{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan{
+    border-top: solid 1px rgb(42,42,42);
+}
+.plan:last-of-type {
+    border-bottom: solid 1px rgb(42,42,42);
+}
+
+/* Contact */
