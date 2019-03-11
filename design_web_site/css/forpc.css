@@ -66,29 +66,68 @@ main #retouch div{
 /*------------------------------------------------*/
 /* Portfolio～Contact */
 /*------------------------------------------------*/
+article{
+    width:80%;
+    margin-right: auto;
+    margin-left : auto;
+}
 
 /* Portfolio */
-.portfolio_image{
-    background: rgb(256,256,256);
-}
-
-/* Work flow */
-.work_flow_stage{
-    background: rgb(256,256,256);
-}
-
-/* Cost */
-article#cost{
+#portfolio_image{
+    /*pc用ではimgを横並びにする*/
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.plan{
-    border-top: solid 1px rgb(42,42,42);
+#portfolio_image .img_box{
+    flex-basis: 30%;
 }
-.plan:last-of-type {
+
+
+
+/* Work flow */
+article#workflow dl div.work_flow_stage{
+    /*pc用ではdtとdlは横並びにする*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+article#workflow dd{
+    flex-basis: 30%;
+}
+article#workflow dt{
+    flex-basis: 70%;
+}
+
+
+/* Cost */
+article#cost dl{
+    /*pc用では#plans_first_halfと#plans_latter_halfを横並びにする*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+article#cost dl div#plans_first_half
+,article#cost dl div#plans_latter_half{
     border-bottom: solid 1px rgb(42,42,42);
+    width: 50%;
+}
+
+article#cost dl div#plans_first_half{
+    margin-right: 3%;
+}
+article#cost dl div#plans_latter_half{
+    margin-left: 3%;
+}
+
+
+
+article#cost dl div.plan{
+    border-top: solid 1px rgb(42,42,42);
 }
 
 /* Contact */
