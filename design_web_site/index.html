@@ -177,15 +177,18 @@
 
             <form action="php/mailform.php" method="post" id="mail_form">
                 <dl>
-                    <dt>お名前<span>Your Name</span></dt>
-                    <dd class="required" id="contact_dd_name_1"><input type="text" id="name_1" name="name_1" value="" placeholder="お名前" /> <!-- <input type="text" id="name_2" name="name_2" value="" /> -->
-                    </dd>
+                    <div class="inquirer">
+                        <dt>お名前<span>Your Name</span></dt>
+                        <dd class="required" id="contact_dd_name_1"><input type="text" id="name_1" name="name_1" value="" placeholder="お名前" /> <!-- <input type="text" id="name_2" name="name_2" value="" /> -->
+                        </dd>
 
-                    <dt>メールアドレス<span>Mail Address</span></dt>
-                    <dd class="required" id="contact_dd_mail_address"><input type="email" id="mail_address" name="mail_address" value="" placeholder="メールアドレス" /></dd>
-
-                    <dt>お問い合わせの内容<span>Mail Contents</span></dt>
-                    <dd class="required" id="contact_dd_mail_contents"><textarea id="mail_contents" name="mail_contents" cols="40" rows="5" placeholder="メッセージ"></textarea></dd>
+                        <dt>メールアドレス<span>Mail Address</span></dt>
+                        <dd class="required" id="contact_dd_mail_address"><input type="email" id="mail_address" name="mail_address" value="" placeholder="メールアドレス" /></dd>
+                    </div>
+                    <div class="inquiry">
+                        <dt>お問い合わせの内容<span>Mail Contents</span></dt>
+                        <dd class="required" id="contact_dd_mail_contents"><textarea id="mail_contents" name="mail_contents" placeholder="メッセージ"></textarea></dd>
+                    </div>
                 </dl>
 
                 <p id="form_submit"><input type="button" id="form_submit_button" value="送信" /></p>

@@ -40,7 +40,7 @@ header {
 /*------------------------------------------------*/
 #main_visual{
      background: url("../data/img/mainvisual_pc.jpg") no-repeat center center;
-     background-size:cover;/*表示領域に収める*/
+     background-size:100% auto;/*表示領域に収める*/
 }
 
 
