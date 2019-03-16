@@ -2,6 +2,10 @@
 
 
 form#mail_form{
+	padding-top: 40px;
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-bottom: 40px;
 	background : #ffffff;
 }
 
@@ -12,17 +16,24 @@ form#mail_form dl{
 	justify-content: space-around;
 	align-content: space-around;
 	width: 100%;	
-	height: 100%;	
+	height: 140px;	
 }
 
+/*問い合わせ者情報*/
 form#mail_form dl div.inquirer{
     grid-column:1/2;
 	grid-row: 1/3;
 	width: 90%;
 	height: 90%;
 	justify-self: center;
+	/*下層はflexboxで縦並び*/
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-content: space-between;
 }
 
+/*問い合わせ内容*/
 form#mail_form dl div.inquiry{
     grid-column:2/3;
 	grid-row: 1/3;
@@ -31,30 +42,35 @@ form#mail_form dl div.inquiry{
 	justify-self: center;
 }
 
+form#mail_form dl dd{
+	width: 100%;	
+	border : none;
+}
+
 form#mail_form dd#contact_dd_mail_contents
 ,form#mail_form textarea#mail_contents{
 	width: 100%;	
-	height: 100%;	
+	height: 99px;	
 }
 
 
 
 form#mail_form dl dt{
 	display : none;
-	/*
-	clear : both;
-	width : 30%;
-	float : left;
-	border-top : 1px solid #cccccc;
-	padding : 15px 0;
-	text-align : right;
-	overflow : hidden;
-	*/
-	 
+	/* 見出しとルビは非表示	*/
 }
 
-form#mail_form dl dd{
-	border : none;
+ form#mail_form dd#contact_dd_name_1
+,form#mail_form dd#contact_dd_mail_address
+{
+	height: 50%;
+}
+
+ input::placeholder
+,input:-ms-input-placeholder/*IE*/
+,input::-ms-input-placeholder/*Edg*/
+{
+  color: rgb(190, 190, 190);
 }
 
 form#mail_form dl dt span{
@@ -149,8 +165,7 @@ form#mail_form input[type="text"],
 form#mail_form input[type="email"]
 {
 	width : 100%;
-	height : 2.5em;
-	padding : 2px 2%;
+	height : 35px;
 	border : 1px solid rgb(166, 166, 166);
 	background : rgb(255, 255, 255);
 	-webkit-appearance : none;
@@ -169,7 +184,6 @@ form#mail_form textarea:focus{
 
 form#mail_form textarea{
 	display : block;
-	padding : 2px 2%;
 	resize : vertical;
 	border : 1px solid rgb(166, 166, 166);
 	background : rgb(255, 255, 255);
@@ -180,16 +194,13 @@ form#mail_form textarea{
 
 
 form#mail_form p#form_submit{
-	width : 90%;
+	width : 100%;
 	margin : 0 auto;
-	padding : 15px 0;
+	padding : 0 0;
 }
 
 form#mail_form input[type="button"]{
-	padding : 15px 30px;
 	vertical-align : middle;
-	letter-spacing : 1em;
-	line-height : 1;
 	background : rgb(102, 102, 102);
 	border : 1px solid rgb(102, 102, 102);
 	color : #ffffff;
@@ -205,7 +216,10 @@ form#mail_form input[type="button"]:hover{
 }
 
 form#mail_form input#form_submit_button{
-	margin-left : 40%;
+	display: block;
+	margin: 0 0 0 auto;
+	width: 100px;
+	height: 35px;
 }
 
 

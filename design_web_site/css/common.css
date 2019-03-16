@@ -33,6 +33,7 @@ header {
     background: linear-gradient(to right, #83e4df,#bcf06b);
     margin-right: auto;
     margin-left : auto;
+    
 }
 
 /*------------------------------------------------*/
@@ -205,3 +206,11 @@ article#cost dt{
 
 /* Contact */
 
+
+
+footer {
+     height: 80px;
+     width: 100%;
+     background: rgb(240,240,240);
+     margin-top:80px;
+}
