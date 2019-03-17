@@ -43,6 +43,12 @@ nav ul li:last-child{
     color: rgb(166, 166, 166);
 }
 
+.contents{
+    /*ページ内リンクの位置調整*/
+    margin-top: -30px;
+    padding-top: 30px;
+}
+
 
 /*------------------------------------------------*/
 /* main_visual～自己紹介まで */
