@@ -13,6 +13,12 @@ form#mail_form dl{
     display: grid;      
     grid-template-rows: 1fr 1fr;/*2行*/
 	grid-template-columns: 1fr 1fr;/*2列*/
+
+	/*IE*/
+	display: -ms-grid;
+	-ms-grid-rows: 1fr 1fr;/*2行*/
+    -ms-grid-columns: 1fr 1fr;/*2列*/
+	
 	justify-content: space-around;
 	align-content: space-around;
 	width: 100%;	
@@ -23,6 +29,11 @@ form#mail_form dl{
 form#mail_form dl div.inquirer{
     grid-column:1/2;
 	grid-row: 1/3;
+	/*IE*/
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+	-ms-grid-row-span: 2;
+	
 	width: 90%;
 	height: 90%;
 	justify-self: center;
@@ -37,6 +48,11 @@ form#mail_form dl div.inquirer{
 form#mail_form dl div.inquiry{
     grid-column:2/3;
 	grid-row: 1/3;
+	/*IE*/
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+	-ms-grid-row-span: 2;
+
 	width: 90%;
 	height: 90%;
 	justify-self: center;
@@ -194,9 +210,8 @@ form#mail_form textarea{
 
 
 form#mail_form p#form_submit{
-	width : 100%;
 	margin : 0 auto;
-	padding : 0 0;
+	padding : 0 3% 0 0;
 }
 
 form#mail_form input[type="button"]{
