@@ -1,5 +1,5 @@
 /*
-PC・タブレット用css
+スマホ用css
 */
 
 @charset "utf-8";
@@ -9,29 +9,12 @@ PC・タブレット用css
 }
 
 header {
-     height: 100px;
-     width: 100%;
 }
 
 nav ul{
-	display: flex;
-    justify-content: flex-end;
-    height: 70px;
-    background: rgb(240,240,240);
 }
 
 nav ul li{
-    color: rgb(0, 0, 0);
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 1em;
-    border-right: 1px solid rgb(0, 0, 0);
-}
-
-nav ul li:last-child{
-	border: none;
 }
 
  nav ul li a:link
@@ -49,46 +32,43 @@ nav ul li:last-child{
     padding-top: 30px;
 }
 
-/*sp用改行非表示*/
-br.br-sp{
-    display: none;
-}
-
 
 /*------------------------------------------------*/
 /* main_visual～自己紹介まで */
 /*------------------------------------------------*/
 
 #main_visual{
-     height: 925px;
+     height: 619px;
      width: 100%;
-
-     background: url("../data/img/mainvisual_pc.jpg") no-repeat center center;
-     background-size:cover;/*表示領域を覆う*/
-
+     background: url("../data/img/mainvisual_sp.jpg") no-repeat center center;
+     background-size: auto 619px;
 }
 
-
 main{
-    /*gridの比率pc用*/
-    grid-template-rows: 3fr 7.5fr 5fr;/* 行の髙さの比率 3行*/
+    /*gridの比率sp用*/
+    grid-template-rows: 2fr 3.5fr 5fr;/* 行の髙さの比率 3行*/
     grid-template-columns:1fr 1fr;  /* 列の幅の比率 2列*/
-
-    /*IE*/
-    display: -ms-grid;
-    -ms-grid-rows: 3fr 7fr 5fr;/*3行*/
-    -ms-grid-columns: 1fr 1fr;/*２列*/
 }
 
  main #retouch h1
 ,main #design h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
+}
+
+ main #retouch img
+,main #design img {
+    width: 65%;
+    height: auto;
+}
+
+
+ main #retouch p
+,main #design p {
+    font-size: 0.9em;
 }
 
 
 main #self_introduction{
-     display: flex;
-     align-items: center;
      padding-left: 10%; 
      padding-right: 10%;
      padding-top: 50px; 
@@ -97,88 +77,70 @@ main #self_introduction{
 
 
 .likeh2{
-    width: 35%;/*左に配置し幅固定*/
+    margin-bottom: 20px;
 }
 .explanatory_text{
-    flex: 1;/*右に配置し、幅可変*/
 }
 
 main #self_introduction h2{
-    font-size: 1.2em;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1em;
     width: 6em;
-    padding: 1em 2em 1em 2em ;
+    padding: 0.5em 1em 0.5em 1em ;
     letter-spacing: 0.3em;
 }   
-
-
-main #design div{   
-    margin-right: 25%;
-}
-main #retouch div{
-    margin-left: 25%;
-}
 
 
 /*------------------------------------------------*/
 /* Portfolio～Contact */
 /*------------------------------------------------*/
 article{
-    width:80%;
+    width: 90%;
     margin-right: auto;
     margin-left : auto;
 }
 
 /* Portfolio */
 #portfolio_image{
-    /*pc用ではimgを横並びにする*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 #portfolio_image .img_box{
-    flex-basis: 30%;
+    margin-bottom: 5%;
 }
 
 
 
 /* Work flow */
 article#workflow dl div.work_flow_stage{
-    /*pc用ではdtとdlは横並びにする*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
 }
 article#workflow dd{
-    flex-basis: 30%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 article#workflow dt{
-    flex-basis: 70%;
 }
 
 
 /* Cost */
 article#cost dl{
     /*pc用では#plans_first_halfと#plans_latter_halfを横並びにする*/
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
 }
 
-article#cost dl div#plans_first_half
-,article#cost dl div#plans_latter_half{
+article#cost dl div#plans_latter_half{
     border-bottom: solid 1px rgb(42,42,42);
-    width: 50%;
+    width: 100%;
 }
 
 article#cost dl div#plans_first_half{
-    margin-right: 3%;
+    margin-right: 0%;
 }
 article#cost dl div#plans_latter_half{
-    margin-left: 3%;
+    margin-left: 0%;
 }
 
 
