@@ -38,11 +38,10 @@ nav ul li{
 /*------------------------------------------------*/
 
 #main_visual{
-     height: 619px;
-     width: 100%;
-     background: url("../data/img/mainvisual_sp.jpg") no-repeat center center;
-     background-size: auto 619px;
-}
+    width: 100%;
+    background: url("../data/img/mainvisual_sp.jpg") no-repeat center center;
+    padding-bottom: calc(100%*619/750);/* calc(100*ImageHeight/ImageWidth)% */
+    background-size: 100% auto;}
 
 main{
     /*gridの比率sp用*/
