@@ -44,13 +44,13 @@ div#thanks dl dt{
 
 /* --responsive------------------------------------------- */
 
-/* 640pixel start */
-@media screen and ( max-width : 640px ){
+/* 735pixel start */
+@media screen and ( max-width : 735px ){
 
 div#thanks{
 	width : 95%;
 }
 
 }
-/* 640pixel end */
+/* 735pixel end */
 

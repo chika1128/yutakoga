@@ -18,13 +18,13 @@ a:active{
 
 /* --responsive------------------------------------------- */
 
-/* 640pixel start */
-@media screen and ( max-width : 640px ){
+/* 735pixel start */
+@media screen and ( max-width : 735px ){
 
 body{
 	font-size : 100%;
 }
 
 }
-/* 640pixel end */
+/* 735pixel end */
 
