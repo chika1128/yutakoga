@@ -21,6 +21,7 @@ em,address {font-style: normal;}
 
 body {
     background: rgb(240,240,240);
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 }
 
 header {
@@ -140,7 +141,7 @@ main #self_introduction .explanatory_text p{
 /*------------------------------------------------*/
 /* 見出し */
 article h1, .article_description{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     text-align: center;
     color: rgb(102,102,102);
 }
@@ -199,6 +200,13 @@ article#workflow dl div.work_flow_stage{
 article#workflow dd{
     font-size: 1.5em;
 }
+/*丸付き数字画像*/
+article#workflow dd img{
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 0.4em;
+}
+
 
 
 

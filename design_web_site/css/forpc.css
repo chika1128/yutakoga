@@ -154,6 +154,10 @@ article#workflow dl div.work_flow_stage{
 article#workflow dd{
     flex-basis: 30%;
 }
+article#workflow dd img{
+    float: left;
+}
+
 article#workflow dt{
     flex-basis: 70%;
 }
