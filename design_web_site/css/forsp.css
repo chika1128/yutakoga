@@ -191,15 +191,17 @@ main #self_introduction h2{
 }   
 
 
-/*------------------------------------------------*/
-/* Portfolio～Contact */
-/*------------------------------------------------*/
-article{
+/*ページの基本幅*/
+article,
+footer div{
     width: 90%;
     margin-right: auto;
     margin-left : auto;
 }
 
+/*------------------------------------------------*/
+/* Portfolio～Contact */
+/*------------------------------------------------*/
 /* Portfolio */
 #portfolio_image{
 }

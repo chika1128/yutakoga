@@ -124,15 +124,17 @@ main #retouch div{
 }
 
 
-/*------------------------------------------------*/
-/* Portfolio～Contact */
-/*------------------------------------------------*/
-article{
+/*ページの基本幅*/
+article,
+footer div{
     width:80%;
     margin-right: auto;
     margin-left : auto;
 }
 
+/*------------------------------------------------*/
+/* Portfolio～Contact */
+/*------------------------------------------------*/
 /* Portfolio */
 #portfolio_image{
     /*pc用ではimgを横並びにする*/
