@@ -69,7 +69,7 @@ main #retouch{
     /*IE*/
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-	-ms-grid-column-span: 1;
+    -ms-grid-column-span: 1;
 }
 
 main #design{
@@ -80,8 +80,14 @@ main #design{
     /*IE*/
     -ms-grid-row: 2;
     -ms-grid-column: 2;
-	-ms-grid-column-span: 1;
+    -ms-grid-column-span: 1;
 }
+
+ main #retouch
+,main #design {
+    font-size: 0.875em;
+}
+
 
  main #retouch h1
 ,main #design h1 {
@@ -98,6 +104,11 @@ main #design{
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+ main #retouch p
+,main #design p {
+    line-height: 1.5em;
 }
 
 
@@ -118,11 +129,16 @@ main #self_introduction h2{
     background: -webkit-linear-gradient(left, #83e4df,#bcf06b); 
     background: linear-gradient(to right, #83e4df,#bcf06b);
     text-align: center;
-}   
+}
+
+main #self_introduction h3{
+    font-size: 1.125em;
+}
 
 main #self_introduction .explanatory_text p{
      margin-top: 20px;
      margin-bottom: 20px;
+     line-height: 1.5em;
 }
 
 .skill{
@@ -160,6 +176,10 @@ article h1{
 }
 
 /* Portfolio */
+#portfolio p {
+    line-height: 1.5em;
+}
+
 #portfolio_image {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -186,7 +206,6 @@ article#workflow dl{
     flex-direction: column;
     flex-wrap: nowrap;
     margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 article#workflow dl div.work_flow_stage{
@@ -195,6 +214,11 @@ article#workflow dl div.work_flow_stage{
     padding: 3%;
     margin-bottom:40px; 
 }
+
+article#workflow dl div.work_flow_stage:last-child{
+    margin-bottom:0; 
+}
+
 
 /*#workflow dd,#workflow dtはpc用とsp用で出しわける*/
 article#workflow dd{
