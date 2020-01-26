@@ -213,13 +213,13 @@ article{
 /* Work flow */
 article#workflow dl div.work_flow_stage{
 }
-article#workflow dd{
+article#workflow dt{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-article#workflow dt{
+article#workflow dd{
 }
 
 

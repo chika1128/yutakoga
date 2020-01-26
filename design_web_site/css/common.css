@@ -221,11 +221,11 @@ article#workflow dl div.work_flow_stage:last-child{
 
 
 /*#workflow dd,#workflow dtはpc用とsp用で出しわける*/
-article#workflow dd{
+article#workflow dt{
     font-size: 1.5em;
 }
 /*丸付き数字画像*/
-article#workflow dd img{
+article#workflow dt img{
     height: 1.5em;
     width: 1.5em;
     margin-right: 0.4em;
@@ -255,11 +255,11 @@ article#cost dl div.plan{
 }
 
 
-article#cost dd{
+article#cost dt{
     flex-basis: auto;
 }
 
-article#cost dt{
+article#cost dd{
     flex-basis: auto;
 }
 

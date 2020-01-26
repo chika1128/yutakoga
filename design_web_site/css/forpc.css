@@ -156,14 +156,14 @@ article#workflow dl div.work_flow_stage{
     justify-content: space-between;
     align-items: center;
 }
-article#workflow dd{
+article#workflow dt{
     flex-basis: 30%;
 }
-article#workflow dd img{
+article#workflow dt img{
     float: left;
 }
 
-article#workflow dt{
+article#workflow dd{
     flex-basis: 70%;
     line-height: 1.5em;
 }
