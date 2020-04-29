@@ -79,10 +79,6 @@ main{
     -ms-grid-columns: 1fr 1fr;/*２列*/
 }
 
-main #about{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
 
  main #retouch h1
 ,main #design h1 {
@@ -124,6 +120,7 @@ main #retouch div{
 }
 
 
+
 /*ページの基本幅*/
 article,
 footer div{
@@ -135,6 +132,10 @@ footer div{
 /*------------------------------------------------*/
 /* Portfolio～Contact */
 /*------------------------------------------------*/
+article h1{
+    margin-top: 80px;
+}
+
 /* Portfolio */
 #portfolio_image{
     /*pc用ではimgを横並びにする*/
