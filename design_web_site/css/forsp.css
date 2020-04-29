@@ -234,7 +234,7 @@ article#cost dl{
 }
 
 article#cost dl div#plans_latter_half{
-    border-bottom: solid 1px rgb(42,42,42);
+    border-bottom: solid 1px rgb(44,44,44);
     width: 100%;
 }
 
@@ -248,7 +248,7 @@ article#cost dl div#plans_latter_half{
 
 
 article#cost dl div.plan{
-    border-top: solid 1px rgb(42,42,42);
+    border-top: solid 1px rgb(44,44,44);
 }
 
 /* Contact */
