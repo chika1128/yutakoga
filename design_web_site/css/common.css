@@ -226,6 +226,7 @@ article#workflow dl div.work_flow_stage:last-child{
 
 /*#workflow dd,#workflow dtはpc用とsp用で出しわける*/
 article#workflow dt{
+    display: flex;
     font-size: 1.5em;
 }
 /*丸付き数字画像*/
