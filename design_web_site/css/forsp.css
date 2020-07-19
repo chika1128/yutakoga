@@ -11,43 +11,27 @@
 header {
 }
 
-nav ul{
-}
-
-nav ul li{
-}
-
- nav ul li a:link
-,nav ul li a:visited{
-    color: rgb(0, 0, 0);
-}
- nav ul li a:hover 
-,nav ul li a:active {
-    color: rgb(166, 166, 166);
-}
-
-
-
-
 
 /* ----------------- ハンバーガーメニュー用 ここから ----------------- */
 
 /*ナビメニューのスタイルを指定*/
 nav{
+    display: flex;
+    align-items: center;
     position: fixed; /*表示位置を固定*/
     z-index: 2; /*重ね順を変更*/
     top: 0; /*表示位置を指定*/
     left: 0; /*表示位置を指定*/
-    background: rgb(0,0,0);
+    background: rgba(240,240,240,0.8);
     color: #000;
     text-align: center; /*テキストを中央揃え*/
     width: 100%; /*全幅表示*/
+    height: 100%;
     transform: translateY(-100%); /*ナビを上に隠す*/
     transition: all 0.6s; /*アニメーションの時間を指定*/
 }
 
 nav ul{
-    background: rgb(240,240,240);
     width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -58,18 +42,22 @@ nav ul li{
     list-style-type: none;
     padding: 0;
     width: 100%;
-    border-bottom: 1px dotted rgb(0, 0, 0);
 }
 
-nav ul li:last-child{
-    padding-bottom: 0;
-    border-bottom: none; /*最後のメニュー項目のみ下線を消す*/
-}
 
 nav ul li a{
     display: block; /*クリックできる領域を広げる*/
     color: #000;
     padding: 1em 0;
+}
+
+ nav ul li a:link
+,nav ul li a:visited{
+    color: rgb(0, 0, 0);
+}
+ nav ul li a:hover 
+,nav ul li a:active {
+    color: rgb(166, 166, 166);
 }
 
 /*トグルボタンが押されたときに付与するクラス*/
