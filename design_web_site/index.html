@@ -24,11 +24,7 @@
             if (window.matchMedia('(max-width: 735px)').matches) {
                 $('.Toggle').click(function () {
                     $(this).toggleClass('opened');
-                    if ($(this).hasClass('opened')) {
-                        $('nav').addClass('opened');
-                    } else {
-                        $('nav').removeClass('opened');
-                    }
+                    $('nav').toggleClass('opened');
                 });
                 //メニュークリック後イベント時にもう１度Toggleクリック（メニューを閉じる）
                 $('nav a[href]').on('click', function (event) {
