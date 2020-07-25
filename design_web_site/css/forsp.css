@@ -14,22 +14,27 @@ header {
 
 /* ----------------- ハンバーガーメニュー用 ここから ----------------- */
 
-/*ナビメニューのスタイルを指定*/
 nav{
     display: flex;
-    align-items: center;/*子要素の縦位置を中央寄せ*/
+    align-items: center;
+    width: 100%;
+    height: 100%;
     position: fixed; /*表示位置を固定*/
     top: 0;
     left: 0;
     z-index: 2; /*重ね順を変更*/
     background: rgba(240,240,240,0.8);
     color: #000;
-    text-align: center; /*テキストを中央揃え*/
-    /*フルスクリーン表示*/
-    width: 100%;
-    height: 100%;
-    transform: translateY(-100%); /*ナビを上に隠す*/
-    transition: all 0.6s; /*アニメーションの時間を指定*/
+    text-align: center;
+    /*初期はhiddenで、トグルボタンクリック時にopenクラスを付加し切り替え*/
+    transition: opacity 0.6s, visibility 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav.opened{
+  opacity: 1;
+  visibility: visible;
 }
 
 nav ul{
@@ -61,17 +66,12 @@ nav ul li a{
     color: rgb(166, 166, 166);
 }
 
-/*トグルボタンが押されたときに付与するクラス*/
-nav.opened{
-    transform: translateY(0%);
-}
 
-/*トグルボタンのスタイルを指定*/
 .Toggle {
     display: block;
     position: fixed;    /* bodyに対しての絶対位置指定 */
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -85,9 +85,9 @@ nav.opened{
     position: absolute;
     width: 25px;
     border-bottom: solid 2px rgb(255, 255, 255);
-    -webkit-transition: .35s ease-in-out;   /*変化の速度を指定*/
-    -moz-transition: .35s ease-in-out;      /*変化の速度を指定*/
-    transition: .35s ease-in-out;           /*変化の速度を指定*/
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
     left: 14px;
 }
  
@@ -103,7 +103,7 @@ nav.opened{
     top: 30px;
 }
  
-/* 最初のspanをマイナス45度に・色変更 */
+/* 最初のspanをマイナス45度に */
 .Toggle.opened span:nth-child(1) {
     top: 24px;
     left: 14px;
@@ -112,7 +112,7 @@ nav.opened{
     transform: rotate(-45deg);
 }
  
-/* 2番目と3番目のspanを45度に・色変更 */
+/* 2番目と3番目のspanを45度に */
 .Toggle.opened span:nth-child(2),
 .Toggle.opened span:nth-child(3) {
     top: 24px;
