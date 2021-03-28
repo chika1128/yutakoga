@@ -1,21 +1,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" href="css/reset.css" type="text/css">
-<link rel="stylesheet" href="css/style.css" type="text/css">
-<link rel="stylesheet" href="css/style_3.css" type="text/css">
-<link rel="stylesheet" href="css/lightbox.min.css">
-<script type="text/javascript" src="js/lightbox.min.js"></script>
-<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>glaphic | ANIMAnia</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-<meta name="description" content="グラフィックアーティストのユウタのポートフォリオサイトです。" />
-<meta name="keywords" content="アート,art,グラフィック,glaphic,フォトコラージュ,photomanipulation,古賀ユウタ,animania" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/style_3.css" type="text/css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
+	<script type="text/javascript" src="js/lightbox.min.js"></script>
+	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		//スマホ用ハンバーガーメニュー
+		$(function () {
+			if (window.matchMedia('(max-width: 900px)').matches) {
+				$('.Toggle').click(function () {
+					$(this).toggleClass('opened');
+					$('nav').toggleClass('opened');
+				});
+				//メニュークリック後イベント時にもう１度Toggleクリック（メニューを閉じる）
+				$('nav a[href]').on('click', function (event) {
+					$('.Toggle').trigger('click');
+				});
+			};
+		});
+	</script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>glaphic | ANIMAnia</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+	<meta name="description" content="グラフィックアーティストのユウタのポートフォリオサイトです。" />
+	<meta name="keywords" content="アート,art,グラフィック,glaphic,フォトコラージュ,photomanipulation,古賀ユウタ,animania" />
 </head>
 
 <body>
@@ -24,18 +42,30 @@
 			<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 		</div>
 		<nav>
-      		<ul class="global-nav">
+			<ul class="global-nav">
 				<li><a href="index.html">Top</a></li>
-        		<li><a href="about.html">About</a></li>
-        		<li><a href="glaphic.html">Glaphic</a></li>
-        		<li><a href="index.html#contact">Contact</a></li>
-      		</ul>
-    	</nav>
+				<li><a href="about.html">About</a></li>
+				<li><a href="glaphic.html">Glaphic</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- ハンバーガーメニュー -->
+		<div class="Toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
 	</header>
 	<div id="wrapper">
-		<div class="glaphic_main_visual"><h1 class="glaphic_title"><img src="img/glaphic_title.png" alt="glaphic"></h1></div>
+		<div class="glaphic_main_visual">
+			<h1 class="glaphic_title"><img src="img/glaphic_title.png" alt="glaphic"></h1>
+		</div>
 		<div id="glaphic">
-			<h2><p class="h2">PHOTO MANIPULATION</p></h2>
+			<h2>
+				<p class="h2">PHOTO MANIPULATION</p>
+			</h2>
 			<p class="h2_sub">写真合成作品</p>
 			<div class="point_icon"><img src="img/point_icon.png"></div>
 			<ul class="glaphic_list clearfix">
@@ -72,7 +102,9 @@
 				<li><a href="art_img/artwork_6_l.jpg" data-lightbox="group-1"><img src="art_img/artwork_6.jpg" alt="artwork_6"></a></li>
 				<li><a href="art_img/artwork_5_l.jpg" data-lightbox="group-1"><img src="art_img/artwork_5.jpg" alt="artwork_5"></a></li>
 			</ul>
-			<h2><p class="h2"> ART BOOK</p></h2>
+			<h2>
+				<p class="h2"> ART BOOK</p>
+			</h2>
 			<p class="h2_sub">作品集</p>
 			<div class="point_icon"><img src="img/point_icon.png"></div>
 			<ul class="glaphic_list clearfix">
@@ -82,7 +114,10 @@
 				<li><a href="art_img/artbook_1_l.jpg" data-lightbox="group-1"><img src="art_img/artbook_1.jpg" alt="artwork_36"></a></li>
 			</ul>
 		</div>
-		<div class="footer"><p>Copyright © 2015 ANIMAnia Yuta</p></div>
+		<div class="footer">
+			<p>Copyright © 2015 ANIMAnia Yuta</p>
+		</div>
 	</div>
 </body>
+
 </html>

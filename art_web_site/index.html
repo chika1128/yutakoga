@@ -1,17 +1,34 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" href="css/reset.css" type="text/css">
-<link rel="stylesheet" href="css/style.css" type="text/css">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>top | ANIMAnia</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-<meta name="description" content="グラフィックアーティストのユウタのポートフォリオサイトです。" />
-<meta name="keywords" content="アート,art,グラフィック,glaphic,フォトコラージュ,photomanipulation,古賀ユウタ,animania" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		//スマホ用ハンバーガーメニュー
+		$(function () {
+			if (window.matchMedia('(max-width: 900px)').matches) {
+				$('.Toggle').click(function () {
+					$(this).toggleClass('opened');
+					$('nav').toggleClass('opened');
+				});
+				//メニュークリック後イベント時にもう１度Toggleクリック（メニューを閉じる）
+				$('nav a[href]').on('click', function (event) {
+					$('.Toggle').trigger('click');
+				});
+			};
+		});
+	</script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>top | ANIMAnia</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+	<meta name="description" content="グラフィックアーティストのユウタのポートフォリオサイトです。" />
+	<meta name="keywords" content="アート,art,グラフィック,glaphic,フォトコラージュ,photomanipulation,古賀ユウタ,animania" />
 </head>
 
 <body id="index">
@@ -20,12 +37,20 @@
 			<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 		</div>
 		<nav>
-      		<ul class="global-nav">
-        		<li><a href="about.html">About</a></li>
-        		<li><a href="glaphic.html">Glaphic</a></li>
-        		<li><a href="index.html#contact">Contact</a></li>
-      		</ul>
-    	</nav>
+			<ul class="global-nav">
+				<li><a href="about.html">About</a></li>
+				<li><a href="glaphic.html">Glaphic</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- ハンバーガーメニュー -->
+		<div class="Toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
 	</header>
 	<div id="wrapper">
 		<div class="main-visual"></div>
@@ -33,9 +58,9 @@
 			<h1 class="about-title"><img src="img/about_title.png" alt="about"></h1>
 			<div class="about-text clearfix">
 				<p class="about-sentence-1">古賀ユウタによるグラフィックアートのポートフォリオサイトです。ご訪問ありがとうございます。
-				Photomanipulationという技法による画像加工によって、絵画的で非現実の世界を表現します。ハイファンタジー、モダンテイスト、写真合成から生まれる独特の世界観をお楽しみください。</p>
+					Photomanipulationという技法による画像加工によって、絵画的で非現実の世界を表現します。ハイファンタジー、モダンテイスト、写真合成から生まれる独特の世界観をお楽しみください。</p>
 				<p class="about-sentence-2">This website is graphic art portfolio made by Yuta Koga. </br>Thanks for viewing.</br>Expressing picturesque and unreality world using Photomanipulation, glaphic technique.</br>
-				Wish you enjoy this unique and fantasy, modern art world.</p>
+					Wish you enjoy this unique and fantasy, modern art world.</p>
 			</div>
 			<div class="prof-light clearfix">
 				<div class="prof-txt">
@@ -63,41 +88,33 @@
 				<div class="blog-photo-left"><img src="img/blog_visual.jpg" alt="glaphic_photo"></div>
 				<div class="blog-text-right">
 					<p class="blog-sentence">お仕事で製作した作品を掲載しております。</br>また、仕事の例やフローをご紹介しております。お仕事をご依頼したい方はご参考にしてください。</br>※現在準備中です。</br></br>
-					Artworks produced as a job and work flow are posted on.Who want to request the work refer to this.</br>＊Now this page is in preparation</p>
+						Artworks produced as a job and work flow are posted on.Who want to request the work refer to this.</br>＊Now this page is in preparation</p>
 					<div class="btn_little_noopen"><a>coming soon</a></div>
 				</div>
 			</div>
 		</div>
-	<div id="contact">
-		<h1 class="contact-title"><img src="img/contact_logo.png" alt="contactc"></h1>
-		<p class="contact-sentence">ご意見・ご感想やお仕事のご依頼、出展のお誘いなど、<br>下記メールアドレスよりご連絡ください。<br>SNSからのご連絡でも構いません。<br><a href="mailto:yu1t2one@gmail.com">yu1t2one@gmail.com</a></p>
-		<div class="sns clearfix">
-			<div class="twitter"><a href="https://twitter.com/yuta_animania/" target="_blank"><img src="img/twitter_btn.png" alt="twitter"></a></div>
-			<div class="insta"><a href="https://www.instagram.com/yuta_anima/" target="_blank"><img src="img/insta_btn.png" alt="insta"></a></div>
-		</div>
-		<div class="buyitem">
-			<h1 class="buy-title"><img src="img/buyitem_logo.png" alt="buy_item"></h1>
-			<div class="buy-text clearfix">
-				<div class="buy-text-left">
-					<p class="buy-sentence">プリント原画や作品集等、購入をお考えの方は、以下購買サイトをご確認くださいませ。</br>※現在準備中です。</p>
-					<div class="btn_little_base"><a>coming soon</a></div>
+		<div id="contact">
+			<h1 class="contact-title"><img src="img/contact_logo.png" alt="contactc"></h1>
+			<p class="contact-sentence">ご意見・ご感想やお仕事のご依頼、出展のお誘いなど、<br>下記メールアドレスよりご連絡ください。<br>SNSからのご連絡でも構いません。<br><a href="mailto:yu1t2one@gmail.com">yu1t2one@gmail.com</a></p>
+			<div class="sns clearfix">
+				<div class="twitter"><a href="https://twitter.com/yuta_animania/" target="_blank"><img src="img/twitter_btn.png" alt="twitter"></a></div>
+				<div class="insta"><a href="https://www.instagram.com/yuta_anima/" target="_blank"><img src="img/insta_btn.png" alt="insta"></a></div>
+			</div>
+			<div class="buyitem">
+				<h1 class="buy-title"><img src="img/buyitem_logo.png" alt="buy_item"></h1>
+				<div class="buy-text clearfix">
+					<div class="buy-text-left">
+						<p class="buy-sentence">プリント原画や作品集等、購入をお考えの方は、以下購買サイトをご確認くださいませ。</br>※現在準備中です。</p>
+						<div class="btn_little_base"><a>coming soon</a></div>
+					</div>
+					<div class="buy-photo-right"><img src="img/buy_photo.jpg" alt="buy_photo"></div>
 				</div>
-				<div class="buy-photo-right"><img src="img/buy_photo.jpg" alt="buy_photo"></div>
 			</div>
 		</div>
-	</div>
-	<div class="footer"><p>Copyright © 2015 ANIMAnia Yuta</p></div>
+		<div class="footer">
+			<p>Copyright © 2015 ANIMAnia Yuta</p>
 		</div>
+	</div>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
