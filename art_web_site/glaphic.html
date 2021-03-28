@@ -9,23 +9,10 @@
 	<link rel="stylesheet" href="css/lightbox.min.css">
 	<script type="text/javascript" src="js/lightbox.min.js"></script>
 	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	<!-- ハンバーガーメニュー用 start -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript">
-		//スマホ用ハンバーガーメニュー
-		$(function () {
-			if (window.matchMedia('(max-width: 900px)').matches) {
-				$('.Toggle').click(function () {
-					$(this).toggleClass('opened');
-					$('nav').toggleClass('opened');
-				});
-				//メニュークリック後イベント時にもう１度Toggleクリック（メニューを閉じる）
-				$('nav a[href]').on('click', function (event) {
-					$('.Toggle').trigger('click');
-				});
-			};
-		});
-	</script>
-
+	<script src="js\hamburger.js"></script>
+	<!-- ハンバーガーメニュー用 end -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>glaphic | ANIMAnia</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
