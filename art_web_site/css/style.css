@@ -405,12 +405,6 @@ header {
 
 
 	/* ----------------- ハンバーガーメニュー用 ここから ----------------- */
-
-	.global-nav li {
-		margin: 0 auto 0 auto;
-    	float: none;
-	}
-	
 	nav{
 		display: flex;
 		align-items: center;
@@ -420,8 +414,8 @@ header {
 		top: 0;
 		left: 0;
 		z-index: 2; /*重ね順を変更*/
-		background: rgb(255, 255, 255);
-		color: #000;
+		background: #FFFFFF;
+		color: #000000;
 		text-align: center;
 		/*初期はhiddenで、トグルボタンクリック時にopenクラスを付加し切り替え*/
 		transition: opacity 0.6s, visibility 0.6s;
@@ -434,40 +428,36 @@ header {
 		visibility: visible;
 	}
 
-	nav ul{
+	.global-nav{
 		width: 100%;
 		margin: 0 auto;
 		padding: 0;
 	}
 
-	nav ul li{
+	.global-nav li{
+    	float: none;
+		margin: 0 auto 0 auto;
+		padding: 0;
 		font-size: 1.1em;
 		list-style-type: none;
-		padding: 0;
 		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-    	border-top: 1px solid rgb(0, 0, 0);
+    	border-top: 1px solid #000000;
 	}
 
-	nav ul li:last-child{
-    	border-bottom: 1px solid rgb(0, 0, 0);
+	.global-nav li:last-child{
+    	border-bottom: 1px solid #000000;
 	}
 
-	nav ul li a{
+	.global-nav li a{
 		display: block; /*クリックできる領域を広げる*/
-		color: #000;
-		padding: 1em 0;
+		color: #000000;
+		padding: 1.5em 0;
 	}
 
-
-	nav ul li a:link
-	,nav ul li a:visited{
-		color: rgb(0, 0, 0);
-	}
-	nav ul li a:hover 
-	,nav ul li a:active {
-		color: rgb(166, 166, 166);
+	.global-nav li a:hover {
+		color: #877f39;
+		text-decoration: none;
+		font-weight: bold;
 	}
 
 
@@ -480,7 +470,7 @@ header {
 		height: 80px;
 		cursor: pointer;
 		z-index: 3;
-		background: rgb(255, 255, 255);
+		background: #FFFFFF;
 
 	}
 	
@@ -488,7 +478,7 @@ header {
 		display: block;
 		position: absolute;
 		width: 40px;
-		border-bottom: solid 2px rgb(0, 0, 0);
+		border-bottom: solid 2px #000000;
 		-webkit-transition: .35s ease-in-out;
 		-moz-transition: .35s ease-in-out;
 		transition: .35s ease-in-out;
