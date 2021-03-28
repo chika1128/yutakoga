@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.glaphic_main_visual {
+	position: relative;
+	background-image: url(../img/main_visual_glaphic.jpg);
+	height: 300px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin_botom: 0;
+}
+
+.glaphic_title {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 120px;
+}
+
+#glaphic {
+	background-image: url("../img/bg_mark.jpg");
+	padding-bottom: 80px;
+}
+
+.glaphic_list {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.glaphic_list li {
+	float: left;
+	list-style: none;
+	margin: 0 20px 10px 0;
+	display:block;
+	background-color: #877f39;
+}
+
+.glaphic_list li:nth-child(4n) {
+	margin-right: 0;
+}
+
+.glaphic_list li img{
+   transition:all 0.2s ease;
+}
+
+.glaphic_list li img:hover {
+   opacity: 0.2;
+}
+
+
+@media screen and (max-width:900px) {
+
+	.glaphic_main_visual {
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin_botom: 0;
+	}
+	
+	.glaphic_title {
+	width: auto;
+	margin: 0 5%;
+	padding-top: 70px;
+	}
+	
+	.glaphic_list {
+	margin: 0 5%;
+	width: 100vw;
+	}
+
+	.glaphic_list li {
+	float: left;
+	list-style: none;
+	margin: 0 20px 10px 0;
+	display:block;
+	background-color: #877f39;
+	}
+	
+	.glaphic_list li:nth-child(4n) {
+	margin-right: 0;
+	}
+	
+	.glaphic_list li img{
+    transition:all 0.2s ease;
+	width: 43.5vw;
+	}
+	
+	
+}

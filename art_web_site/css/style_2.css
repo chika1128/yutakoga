@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.about_main_visual {
+	position: relative;
+	background-image: url(../img/main_visual_about.jpg);
+	height: 300px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin_botom: 0;
+}
+
+.about_title {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 120px;
+}
+
+#about {
+	background-image: url("../img/bg_mark.jpg");
+}
+
+.prof-light_2 {
+	width: 980px;
+	margin: 0 auto;
+	background-color: #000000;
+}
+
+.news_list {
+	width: 980px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.news_list_left {
+	width: 450px;
+	float: left;
+}
+
+.news_list_right {
+	width: 450px;
+	float: right;
+}
+
+hr {
+	width: 980px;
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    overflow: visible;
+	border-top: 1px dashed #ffffff;
+}
+
+.profile_contents {
+	width: 980px;
+	padding: 40px 0;
+	margin: 0 auto;
+}
+
+.profile_title {
+	width: 200px;
+	argin: auto 0;
+	float: left;
+}
+
+.profile_title p {
+	font-size: 26px;
+	font-weight: bold;
+	font-family: 'Noto Serif JP', serif;
+}
+
+.profile-sentence {
+	width: 750px;
+	float: right;
+}
+
+.exhibition {
+	margin-top: 20px;
+}
+
+
+.exhibition_photo {
+	float: left;
+	margin-right: 15px;
+}
+
+.profile_contents_3 {
+	width: 980px;
+	padding: 40px 0 80px 0;
+	margin: 0 auto;
+}
+
+
+@media screen and (max-width:900px) {
+	
+	
+	.about_main_visual {
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin_botom: 0;
+	}
+	
+	.about_title {
+	width: auto;
+	margin: 0 5%;
+	padding-top: 70px;
+	}
+	
+	.prof-light_2 {
+	width: auto;
+	margin: 0 5%;
+	background-color: #000000;
+	}
+	
+	.news_list {
+	width: auto;
+	margin: 0 5%;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	}
+
+	.news_list_left {
+	width: 100%;
+	float: none;
+	}
+
+	.news_list_right {
+	width: 100%;
+	float: none;
+	}
+	
+	.news_list li{
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 26px;
+	}
+	
+	hr {
+	width: auto;
+    height: 0;
+    margin: 0 5%;
+    padding: 0;
+    border: 0;
+    overflow: visible;
+	border-top: 1px dashed #ffffff;
+	}
+	
+	.profile_contents {
+	width: auto;
+	padding: 40px 0;
+	margin: 0 5%;
+	}
+	
+	.profile_title {
+	width: auto;
+	text-align: center;
+	float: none;
+	}
+	
+	.profile-sentence {
+	padding: 20px;
+	width: auto;
+	float: none;
+	}
+	
+	.profile_contents_3 {
+	width: auto;
+	padding: 40px 0 40px 0;
+	margin: 0 5%;
+	}
+	
+	.exhibition_photo {
+	float: none;
+	width: auto;
+	padding: 10px;
+	margin-right: 0;
+	text-align: center;
+	}
+	
+	.exhibition_photo img{
+	width: 80%;
+	}
+	
+	.exhibition_photo_2 {
+	width: auto;
+	padding: 10px;
+	text-align: center;
+	}
+	
+	.exhibition_photo_2 img{
+	width: 80%;
+	}
+	
+	
+}
+
